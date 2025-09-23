@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" 
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+     <link  href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"rel="stylesheet" />
+     <link rel="stylesheet" href="css/style.css"/>
+     <link rel="stylesheet" href="css/queries.css"/>
+     <title>Florian Flowers</title>
+</head>
+<body onload="displayBox()">
+
+<header class="navbar">
+    <div class="container nav-container">
+
+        <a class="logo" href="#home">
+      <img id="flower" src="https://cdn-1.webcatalog.io/catalog/calmerry/calmerry-icon-filled-256.png?v=1754272364675" alt="flower" width="40" height="40">
+            <p>Florian</p>
+        </a>
+        <nav class="nav-links" id="nav-links">
+            <a href="#home">Home</a>
+            <a href="#why-bloomify">Why Us </a>
+            <a href="shopping_cart.html" target="_blank">Shop</a>
+            <a href="#favourites">Favourites</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="vote_screen.html">New Arrangement</a>
+            <a href="#form">Registration</a>
+            <a href="#download-app">Download App</a> 
+            <a href="feedback.html">Feedback</a>
+
+<div class="search">
+    <div class="row">
+    <input type="text" class="input" placeholder="Search...">
+    <button class="btn">
+        <i class="fas fa-search"></i>
+    </button>
+</div>
+<div class="result-box"></div>
+        </nav>
+
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <!--Section : Cookie-->
+<div class="cookie" >
+    <div id="content">   
+    <img src="data:image/png;base64,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" 
+    class="top">
+    <p> 
+        We Use Cookie To Optimize User Experience And Content.
+    </p>
+
+    <div class="button">
+        <a href="#" onclick="hideBox()">Accept</a>
+        <a href="#" class="reject" onclick="hideBox()">Reject</a>
+</div>
+<img src="data:image/png;base64,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" 
+class="close" onclick="hideBox()">
+</div>
+</div>
+</section>
+</header>
+
+<!-- Section : Hero-->
+ <section class="hero-section" id="home">
+    <div class="hero-content">
+        <div class="hero-text-">
+            <span class="label">🏆Award-Winning Flower Delivery Service</span>         
+            <h1>
+                Make Someone Smile, <br/>
+                Make Someone Happy!
+            </h1>
+
+          <div class="hero-text"></div>   
+        </div>
+
+        <div class="hero-image">
+            <img src="https://t4.ftcdn.net/jpg/12/05/89/61/360_F_1205896114_MlHERC9DovkX1EJKJSIlisUsSJyrybLF.jpg" alt="hero-img"/>
+        </div>
+    </div>
+ </section>
+
+<!-- Slideshow-->
+<section>
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="https://abfabflowers.ie/cdn/shop/files/AbFab-ShopAutumn2023-LowRes-12.jpg?v=1709837830&width=533" style="width:100%">
+  <div class="text">Huge Range of Flowers</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="https://img.freepik.com/free-photo/young-florist-working-flower-shop_23-2147760965.jpg?semt=ais_hybrid&w=740" style="width:100%">
+  <div class="text">Stylish Designers</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://tlz.ae/wp-content/uploads/2023/02/TZ_flower-shop-online.png" style="width:100%">
+  <div class="text">Our Shop</div>
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+  </section>
+
+<!-- Section: Why Us-->
+<section class="why-us" id="why-us">
+    <span class="label">Why Us</span>
+    <h3>The Best Way to <br/>
+        Send Flowers!
+    </h3>
+    <div class="why-us-content">
+        <div class="card reveal">
+        <i class="fa-solid fa-crown"></i>
+        <span>Best Recomendations</span>
+        <p>Giving you peace of mind and fresh flowers, great customer service & unique handcrafted arrangements.</p>
+        </div>
+        <div class="card reveal">
+            <i class="fa-solid fa-truck-fast"></i>
+            <span>Same-Day & Scheduled Delivery</span>
+            <p>Whether it's a last minute gift or a planned surprise, we deliver fresh flowers exactly when you need them.</p>
+        </div>
+
+        <div class="card reveal">
+            <i class="fa-solid fa-sliders"></i>
+            <span>Build your own custom boquet</span>
+            <p>Get personalized flower suggestions based on your preferences, past orders, and special occasions.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Section: Customer Favourites-->
+ <section class="customer-favourites" id="favourites">
+    <div class="label-contain">
+        <span class="label">Customer Favourites</span>
+    </div>
+    <h3>
+        Discover our best selling <br/>
+        floral arrangements
+    </h3>
+
+    <div class="customer-favourites-content">
+<div class="product reveal">
+    <img src="image/9.png"/> 
+    <p class="rating">
+        <i class="fa-solid fa-star"></i>
+        4.8
+    </p>
+    <span>Pink Lily Bunch</span>
+    <p>&#8364; 220</p>
+</div>
+<div class="product reveal">
+    <img src="image/10.png"/>
+    <p class="rating">
+        <i class="fa-solid fa-star"></i>
+        5.0
+    </p>
+    <span>Whispering Carnation</span>
+    <p>&#8364; 120</p>
+</div>
+<div class="product reveal">
+    <img src="image/7.png"/>
+    <p class="rating">
+        <i class="fa-solid fa-star"></i>
+        4.4
+    </p>
+    <span>White Rose Elegance</span>
+    <p>&#8364; 90</p>
+</div>
+<div class="product reveal">
+    <img src="https://assets.intleflorist.com/site/0081A/PIM_Images/Regular/XCHT0400-1.png"/>
+    <p class="rating">
+        <i class="fa-solid fa-star"></i>
+        4.9
+    </p>
+    <span>Classic Mixed Blooms</span>
+    <p>&#8364; 200</p>
+</div>
+ </section>
+
+<!-- How It Works-->
+<section class="how-it-works" id="how-it-works">
+    <span class="label">HOW IT WORKS</span>
+<h3>
+    Ordering Flowers Has <br/>
+    Never Been Easier
+</h3>
+<div class="how-it-works-content">
+    <div class="step reveal">
+        <span>1</span>
+        <h4>Browse and Choose</h4>
+        <p>
+            Explore handcrafted floral arrangements for every occasion. Want 
+            something unique? Customize your own bouqet.
+        </p>
+    </div>
+    <div class="step reveal">
+       <span>2</span>
+        <h4>Schedule Your Delivery</h4>
+        <p>
+            Need flowers fast? Choose Same-Day Delivery. Planning ahead?
+            Schedule for later, and we'll take care of the rest.
+        </p>  
+    </div>
+    <div class="step reveal">
+       <span>3</span>
+        <h4>Track & Enjoy</h4>
+        <p>
+            Once ordered, relax! Our real-time tracking system keeps you updated, 
+            from bouquet preparation to doorstep delivery.
+        </p>  
+    </div>
+</div>
+</section>
+
+<!-- Testimonials-->
+<section class="testimonials" id="testimonials">
+    <span class="label">TESTIMONIALS</span>
+    <h3>
+        Hear From Our <br/>
+        Happy Customers
+    </h3>
+    <div class="testimonials-content">
+        <div class="testimonial reveal">
+        <i class="fa-solid fa-quote-left"></i>
+        <p>Very impressed with how quick you deliver and I have also seen the flowers and they are beautiful.</p>
+        <span>Amanda Barns</span>
+    </div>
+    <div class="testimonial reveal">
+        <i class="fa-solid fa-quote-left"></i>
+        <p>Great customer service! I even received a video showing the flower arrangement and card before delivery!</p>
+        <span>Jack Black</span>
+    </div>
+    <div class="testimonial reveal">
+        <i class="fa-solid fa-quote-left"></i>
+        <p>It was beautiful , the nature of the hat box means not that many actual flowers so quite expensive but it was lovely and great service</p>
+        <span>Susan White</span>
+    </div>
+       <div class="testimonial reveal">
+        <i class="fa-solid fa-quote-left"></i>
+        <p>Beautiful and extremely happy with the flowers and prompt delivery, thank you.</p>
+        <span>Sandra Norton</span>
+    </div>
+    <div class="testimonial reveal">
+        <i class="fa-solid fa-quote-left"></i>
+        <p>So simple to use with great options. I liked the fact that clarification was sought on an element of the order and also updated information on the status of the order.. </p>
+        <span>Julia Roberts</span>
+    </div>
+<div class="testimonial reveal">
+        <i class="fa-solid fa-quote-left"></i>
+        <p>The best delivery and customer service ever. Product of excelent quality. </p>
+        <span>Robert Byrnes</span>
+    </div>
+</div>
+</section>
+
+<!-- Form-->
+<section  class="form" id="form">
+<span class="label">FORM</span>
+<div class="container">
+ <form action="" id="form">
+ <h3>Registration Form</h3>
+<p>Use tab keys to move to the next line</p>
+ <div class="input-group reveal">
+ <label for="username">Username</label>
+ <input type="text" id="username" name="username">
+ <div class="error"></div>
+ </div>
+ <div class="input-group reveal">
+ <label for="email">Email</label>
+ <input type="text" id="email" name="email" >
+ <div class="error"></div>
+ </div>
+ <div class="input-group reveal">
+ <label for="password">Password</label>
+ <input type="password" id="password" name="password">
+ <div class="error"></div>
+ </div>
+ <div class="input-group reveal">
+ <label for="cpassword">Confirm Password</label>
+ <input type="password" id="cpassword" name="cpassword">
+ <div class="error"></div>
+ </div>
+ <button type="submit">Register</button>
+ </form>
+ </div>
+</section>
+
+<!-- Download App-->
+<section class="download-app" id="download-app">
+    <div class="download-app-content">
+        <div class="download-app-text reveal">
+            <h3> Get Florian App & Order <br/>
+            Flowers in Seconds!
+        </h3>
+        <div class="btns">
+            <a href="#">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Download_on_the_App_Store_RGB_blk.svg/1280px-Download_on_the_App_Store_RGB_blk.svg.png"/>
+            </a>
+             <a href="#">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/1024px-Google_Play_Store_badge_EN.svg.png"/>
+            </a>
+        </div>
+      </div>
+        <div class="download-app-img reveal">
+            <img src="https://thumbs.dreamstime.com/b/artistic-phone-mockup-cherry-blossom-design-pastel-background-showcase-your-app-featuring-delicate-soft-colors-375559910.jpg">
+        </div>
+    </div>
+</section>
+
+<!-- Footer-->
+<footer> 
+<div class="footer-content">
+        <h3>Florian</h3>
+          </div>
+<p>Logo</p>
+<canvas id="myCanvas" width="300" height="300" style="border:1px solid #d3d3d3;"></canvas>
+<p><button onclick="myCanvas()">Reveal Our New Logo</button></p>
+ 
+        <div class="counter-container">
+            <i class="fab fa-instagram fa-3x"></i>
+            <div class="counter" data-target="18000"></div>
+            
+       <div class="counter-container">
+            <i class="fab fa-youtube fa-3x"></i>
+            <div class="counter" data-target="15400"></div>
+            
+       <div class="counter-container">
+            <i class="fab fa-facebook fa-3x"></i>
+            <div class="counter" data-target="14500"></div>          
+        </div>
+        </div>
+        </div>    
+    <p class="footer-copy">&copy; 2025 Florian. All rights reserved.</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
