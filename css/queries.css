@@ -1,0 +1,167 @@
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    section, .myCanvas, footer {
+        padding: 3em 4em;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5em;
+    }
+
+    .download-app-img img {
+        width: 400px;
+    }
+}
+
+@media (max-width: 992px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: var(--whiteShade1);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1em 0;
+        z-index: 999;
+    }
+
+      .nav-links.show {
+    display: flex; /* show when toggled */
+  }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+       /* padding-right: 90px;*/
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .why-us-content,
+    .how-it-works-content,
+    .download-app-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .download-app-text, .download-app-img {
+        width: 100%;
+        text-align: center;
+    }
+
+    .download-app-img {
+        justify-content: center;
+    }
+
+    .testimonials-content {
+        grid-template-columns: 1fr;
+    }
+
+    .customer-favourites-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5em;
+    }
+
+    section, .myCanvas, footer {
+        padding: 3em 2em;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        padding: 0.5em 1.5em;
+    }
+
+    .hero-text h1 {
+        font-size: 2em;
+    }
+
+    .hero-text p {
+        font-size: 1em;
+    }
+
+    .customer-favourites-content {
+        grid-template-columns: 1fr;
+    }
+
+    .download-app-content .btns {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .download-app-content a img {
+        margin: 0.5em 0;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.75em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    section, .myCanvas, footer {
+        padding: 2em 1em;
+    }
+
+    .form {
+        width: 90%;
+        padding: 1.5em;
+    }
+
+    .download-app-img img {
+        width: 100%;
+    }
+
+    .hero-image img {
+        width: 90%;
+    }
+
+    .slideshow-container {
+        max-width: 100%;
+    }
+
+    .nav-container {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .logo {
+        font-size: 1.2em;
+    }
+
+    .hamburger {
+        margin-top: 0.5em;
+    }
+
+    .nav-links a {
+        padding: 1em;
+        text-align: center;
+    }
+
+    .rating {
+        padding: 10px;
+    }
+}
