@@ -59,7 +59,7 @@ let products = [
     {
         id: 7,
         name: 'BROOKLYN BOUQUET',
-        image: "7.png",
+        image: '7.png',
         currency: 'Euro',
         price: 120,
     },
@@ -90,7 +90,7 @@ let products = [
         name: 'PURPLE ARRANGEMENT',
         image: '11.png',
         currency: 'Euro',
-        price: 80
+        price: 85
     },
     {
         id: 12,
