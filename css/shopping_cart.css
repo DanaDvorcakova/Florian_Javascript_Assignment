@@ -78,6 +78,7 @@ header .shopping span{
     background-color:#227f6c;
     height: 100vh;
     transition: 0.5s;    
+
 }
 
 .active .cart{
@@ -233,6 +234,10 @@ header .shopping span{
     .cart {
         width: 80%;
         left: 100%;
+    }
+
+    .cart .content {
+        margin-bottom: 70px;
     }
 
     .active .cart {
