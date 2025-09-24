@@ -73,16 +73,19 @@ header .shopping span{
 .cart{
     position: fixed;
     top:0;
+    right: 0;
     left: 100%;
-    width: 500px;
     background-color:#227f6c;
     height: 100vh;
     transition: 0.5s;    
+    margin: 20px;
 
+    overflow-y: auto;
+    max-height: 100vh;
 }
 
 .active .cart{
-    left: calc(100% - 500px);
+    left: calc(100% - 450px);
 }
 .active .container{
    transform: translateX(-200px);
@@ -115,12 +118,50 @@ header .shopping span{
     font-weight: bold;
     cursor: pointer;
     font-size: large;
+   
 }
 .cart .checkOut div:nth-child(2){
     background-color: #4b5856;
     color: #fff;
     font-size: large;
+   
+   
 }
+
+
+
+
+
+
+
+
+
+
+
+
+.listCart {
+    max-height: 5000px; /* Or whatever makes sense for your layout */
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+body.active {
+    overflow: hidden;
+}
+
+.shoppingCartContainer { /* Replace with actual parent container of .listCart */
+    height: 100%;
+    overflow-y: auto;
+}
+
+
+
+
+
+
+
+
+
 
 .listCart li{
     display: grid;
