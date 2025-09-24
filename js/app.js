@@ -65,10 +65,10 @@ let products = [
     },
     {
         id: 8,
-        name: 'FLOWER BOUQUET - 11 TULIPS',
+        name: 'GOODNESS BOUQUET',
         image: '8.png',
         currency: 'Euro',
-        price: 80
+        price: 90
     },
     {
         id: 9,
