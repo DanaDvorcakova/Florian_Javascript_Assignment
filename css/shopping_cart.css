@@ -24,6 +24,7 @@ header .shopping {
 header .shopping img { 
     width: 40px; 
 } 
+
 header .shopping span { 
     background: #1f6658; 
     border-radius: 50%; 
@@ -51,8 +52,9 @@ header .shopping span {
      } 
 
 .list .item img { 
-     width: 100%; 
-    height: 300px; object-fit: cover; 
+    width: 100%; 
+    height: 300px; 
+    object-fit: cover; 
     }
 
 .list .item .title { 
@@ -76,7 +78,7 @@ header .shopping span {
     
 /*cart styling*/ 
 .cart { 
-      position: fixed;
+    position: fixed;
     top: 0;
     right: -100%;
     width: 100%;
@@ -112,9 +114,7 @@ header .shopping span {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
-
-  padding-bottom: env(safe-area-inset-bottom, 20px);
+    padding-bottom: env(safe-area-inset-bottom, 20px);
     background-color: #f6efef;
 
     } 
@@ -150,8 +150,7 @@ header .shopping span {
     { /* Replace with actual parent container of .listCart */ 
         height: 100%; 
         overflow-y: auto; 
-
-          padding-bottom: 100px;
+        padding-bottom: 100px;
     } 
 
     .listCart li{ 
@@ -185,7 +184,7 @@ header .shopping span {
 
 
 @media (max-width: 768px) {
-    .container {
+ .container {
         width: 95%;
     }
 
