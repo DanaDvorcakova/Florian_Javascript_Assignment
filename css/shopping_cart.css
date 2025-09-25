@@ -82,11 +82,16 @@ header .shopping span{
 
     display: flex;
     flex-direction: column;
+
+    width: 100%;
+    max-width: 450px;
 }
 
-.active .cart{
-    left: calc(100% - 450px);
+.active .cart {
+    left: auto;
+    right: 0;
 }
+
 .active .container{
    transform: translateX(-200px);
 }
@@ -166,109 +171,64 @@ body.active {
 
 @media only screen and (max-width: 768px) {
     .container {
-        width: 100%;
-        padding: 0 15px;
-    }
-
-    header {
-        grid-template-columns: 1fr;
-        margin-top: 20px;
-    }
-
-    .list {
-        grid-template-columns: 1fr; 
-        margin-top: 20px;
-    }
-
-    .list .item {
-        margin: 10px 0;
+        width: 95%;
+      
     }
 
     .cart {
-        width: 80%;
-        left: 100%;
+        max-width: 100%;
     }
 
-    .active .cart {
-       right: 0;
+    .listCart li {
+        grid-template-columns: 80px repeat(3, 1fr);
+        row-gap: 15px;
     }
 
     .cart h1 {
-        font-size: 20px;
-    }
-
-    .cart .checkOut {
-        grid-template-columns: 1fr;
-        padding: 0;
+        font-size: 1.2rem;
+        padding: 0 10px;
     }
 
     .cart .checkOut div {
-        height: 30px;
-        font-size: medium;
+        font-size: 1rem;
+        height: 50px;
     }
 
-    .listCart li img {
-        width: 80%;
+    .list .item img {
+        height: 200px;
     }
 
-   .listCart li{
-      display: grid;
-      grid-template-columns: 100px repeat(3, 1fr);
-      row-gap: 5px;
-     }
+    .list .item button {
+        padding: 8px;
+    }
 }
 
 @media only screen and  (max-width: 480px) {
-    .container {
-        width: 100%;
-        padding: 0 15px;
-    }
-
-    header {
-        grid-template-columns: 1fr;
-        margin-top: 20px;
-        text-align: center;
-    }
-
-   .list .item img{
-       width: 100%;
-       height: 200px;
-       object-fit: cover;
-}
-    .list {
-        display: grid;
-        grid-template-columns: 1fr;
-        margin-top: 10px;
-        row-gap: 10px;
-    }
-
-    .list .item {
-        margin: 10px 0;
-    }
-
-    .cart {
-        width: 80%;
-        left: 100%;
-    }
-
-    .active .cart {
-        left: 0;
+       .listCart li {
+        grid-template-columns: 60px repeat(3, 1fr);
     }
 
     .cart h1 {
-        font-size: 20px;
+        font-size: 1rem;
     }
 
-
-   .cart .checkOut div {
-        height: 30px;
-        font-size: medium;
+    .cart .checkOut div {
+        font-size: 0.9rem;
+        padding: 10px;
     }
 
-    .listCart li img {
-        width: 80%;
+    .list .item img {
+        height: 150px;
+    }
+
+    .list .item button {
+        font-size: 0.9rem;
     }
 }
+
+
+
+
 
 @media (max-width: 1024px) {
     .container {
