@@ -78,7 +78,7 @@ header .shopping span{
     background-color:#227f6c;
     height: 100vh;
     transition: 0.5s;    
-    margin: 20px;
+    margin: 0;
 
     overflow-y: auto;
     max-height: 100vh;
@@ -106,13 +106,13 @@ header .shopping span{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 8px 0;
+    /*padding: 5px 0;*/
 
 }
 .cart .checkOut div{
     background-color: #f6efef;
     width: 100%;
-    height: 80px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -203,7 +203,7 @@ body.active {
 
     .cart .checkOut {
         grid-template-columns: 1fr;
-        padding: 20px 0;
+        padding: 0;
     }
 
     .cart .checkOut div {
@@ -270,7 +270,7 @@ body.active {
     .cart .checkOut {
         display: grid;
         grid-template-columns: 1fr;
-        padding: 20px 0;
+        padding: 0;
     }
 
    .cart .checkOut div {
