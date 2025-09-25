@@ -255,10 +255,6 @@ body.active {
         left: 100%;
     }
 
-    .cart .content {
-        margin-bottom: 70px;
-    }
-
     .active .cart {
         left: 0;
     }
@@ -267,7 +263,6 @@ body.active {
         font-size: 20px;
     }
 
- 
 
    .cart .checkOut div {
         height: 30px;
