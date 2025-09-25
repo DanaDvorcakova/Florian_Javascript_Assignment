@@ -80,8 +80,8 @@ header .shopping span{
     transition: 0.5s;    
     margin: 0;
 
-    overflow-y: auto;
-    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .active .cart{
@@ -101,13 +101,9 @@ header .shopping span{
     align-items: center;
 }
 .cart .checkOut{
-    position: absolute;
-    /*bottom: 0;*/
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /*padding: 5px 0;*/
-
 }
 .cart .checkOut div{
     background-color: #f6efef;
@@ -127,7 +123,7 @@ header .shopping span{
     font-size: large;  
 }
 .listCart {
-    max-height: 5000px; 
+      flex: 1;
     overflow-y: auto;
     padding-right: 10px;
 }
