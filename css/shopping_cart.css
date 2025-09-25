@@ -112,7 +112,7 @@ header .shopping span{
 
 
     padding-bottom: env(safe-area-inset-bottom, 20px);
-   
+   background-color: #f6efef;
 }
 .cart .checkOut div{
     background-color: #f6efef;
@@ -136,7 +136,7 @@ header .shopping span{
     overflow-y: auto;
     padding-right: 10px;
 
-    padding-bottom: 80px; /* space for .checkOut buttons */
+    padding-bottom: 100px; /* space for .checkOut buttons */
 }
 
 body.active {
