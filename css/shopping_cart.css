@@ -2,6 +2,7 @@ body {
     background-color: #d3f4e9; 
     margin: 0; 
     font-family: Arial, sans-serif; 
+     overflow-x: hidden;
 } 
 
 .container { 
@@ -75,18 +76,17 @@ header .shopping span {
     
 /*cart styling*/ 
 .cart { 
-    position: fixed; 
-    top:0; 
-    right: 0; 
-    left: 100%; 
-    background-color:#227f6c; 
-    height: 100vh; 
-    transition: 0.5s;
-    margin: 0; 
+      position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    max-width: 450px;
+    height: 100dvh;
+    background-color: #227f6c;
+    transition: right 0.5s;
     display: flex;
     flex-direction: column;
-    width: 100%; 
-    max-width: 450px; 
+    z-index: 1000;
     } 
 
 .active .cart { 
@@ -112,6 +112,11 @@ header .shopping span {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
+
+  padding-bottom: env(safe-area-inset-bottom, 20px);
+    background-color: #f6efef;
+
     } 
         
     .cart .checkOut div{ 
@@ -145,6 +150,8 @@ header .shopping span {
     { /* Replace with actual parent container of .listCart */ 
         height: 100%; 
         overflow-y: auto; 
+
+          padding-bottom: 100px;
     } 
 
     .listCart li{ 
