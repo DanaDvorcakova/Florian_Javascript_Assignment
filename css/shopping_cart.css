@@ -101,46 +101,33 @@ header .shopping span{
     align-items: center;
 }
 .cart .checkOut{
-    position: absolute;
+    position: sticky;
     bottom: 0;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    padding: 8px 0;
 
 }
 .cart .checkOut div{
     background-color: #f6efef;
     width: 100%;
-    height: 70px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: bold;
     cursor: pointer;
     font-size: large;
-   
+
 }
 .cart .checkOut div:nth-child(2){
     background-color: #4b5856;
     color: #fff;
-    font-size: large;
-   
-   
+    font-size: large;  
 }
-
-
-
-
-
-
-
-
-
-
-
-
 .listCart {
-    max-height: 5000px; /* Or whatever makes sense for your layout */
+    max-height: 5000px; 
     overflow-y: auto;
     padding-right: 10px;
 }
@@ -153,16 +140,6 @@ body.active {
     height: 100%;
     overflow-y: auto;
 }
-
-
-
-
-
-
-
-
-
-
 .listCart li{
     display: grid;
     grid-template-columns: 100px repeat(3, 1fr);
@@ -226,6 +203,7 @@ body.active {
 
     .cart .checkOut {
         grid-template-columns: 1fr;
+        padding: 20px 0;
     }
 
     .cart .checkOut div {
@@ -265,7 +243,7 @@ body.active {
         display: grid;
         grid-template-columns: 1fr;
         margin-top: 10px;
-          row-gap: 10px;
+        row-gap: 10px;
     }
 
     .list .item {
@@ -290,10 +268,12 @@ body.active {
     }
 
     .cart .checkOut {
+        display: grid;
         grid-template-columns: 1fr;
+        padding: 20px 0;
     }
 
-    .cart .checkOut div {
+   .cart .checkOut div {
         height: 30px;
         font-size: medium;
     }
@@ -301,7 +281,6 @@ body.active {
     .listCart li img {
         width: 80%;
     }
-
 }
 
 @media (max-width: 1024px) {
