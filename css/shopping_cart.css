@@ -112,6 +112,8 @@ header .shopping span{
 
 
     padding-bottom: env(safe-area-inset-bottom, 20px);
+    background-color: #f6efef;
+    z-index: 10;
 }
 .cart .checkOut div{
     background-color: #f6efef;
