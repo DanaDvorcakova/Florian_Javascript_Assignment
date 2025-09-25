@@ -267,11 +267,7 @@ body.active {
         font-size: 20px;
     }
 
-    .cart .checkOut {
-        display: grid;
-        grid-template-columns: 1fr;
-        padding: 0;
-    }
+ 
 
    .cart .checkOut div {
         height: 30px;
