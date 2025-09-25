@@ -66,7 +66,7 @@ let products = [
     {
         id: 8,
         name: 'GOODNESS BOUQUET',
-        image: '8.png',
+        image: '15.png',
         currency: 'Euro',
         price: 90
     },
@@ -81,7 +81,7 @@ let products = [
         {
         id: 10,
         name: 'ROUND GREEN BOUQUET',
-        image: "10.png",
+        image: '10.png',
         currency: 'Euro',
         price: 120,
     },
