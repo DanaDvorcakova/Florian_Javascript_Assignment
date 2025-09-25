@@ -603,22 +603,23 @@ footer {
     text-decoration: none; 
 }
 
-.counter-container {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 5px;
-}
-
-.counter {
-    font-size: 20px;
-    margin: 10px;
-}
-
 .myCanvas {
-   padding: 4em 6em;
-   
+   padding: 4em 6em;  
+}
+
+.fa-instagram,
+.fa-youtube,
+.fa-facebook {
+    color: #fff;
+    text-decoration: none;
+}
+
+a {
+    color: #fff;
+}
+
+.social-icons a {
+    margin-right: 20px;
 }
 
 /*Reveal on Scroll*/
@@ -687,7 +688,6 @@ footer {
     top: 20px;
     cursor: pointer;
 }
-
 
 
 

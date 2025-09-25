@@ -162,28 +162,6 @@ btn.addEventListener('click', () => {
 })
 
 
-//counter
-const counters = document.querySelectorAll('.counter')
-
-counters.forEach(counter => {
-    counter.innerText = '0'
-
-    const updateCounter = () => {
-        const target = +counter.getAttribute('data-target')
-        const c = counter.innerText
-
-        const increment = target / 200
-
-        if(c > target) {
-            counter.innerText = `${Math.ceil(c + increment)}`
-            setTimeout(pdateCounter, 1)
-        } else {
-            counter.innerText = target
-        }
-    }
-
-    updateCounter()
-})
 
 
 //typewriter effect
@@ -221,6 +199,7 @@ panel.addEventListener('click', (e) => {
         selectedRating = e.target.nextElementSibling.innerHTML
     }
      })   
+
      
      sendBtn.addEventListener('click', (e) => {
         panel.innerHTML = `
@@ -249,7 +228,6 @@ panel.addEventListener('click', (e) => {
 
 
 
-
 //small script to toggle visibility
   document.addEventListener('DOMContentLoaded', () => {
     const hamburger = document.querySelector('.hamburger');
@@ -259,6 +237,8 @@ panel.addEventListener('click', (e) => {
       navLinks.classList.toggle('active');
     });
   });
+
+
 
 
 
