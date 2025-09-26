@@ -62,15 +62,17 @@ font-size: 1.56em;
 .nav-links {
     display: flex;
     gap: 0.5em;
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
     position: absolute;
     top: 70px;
     left: 0;
     right: 0;
     background: white;
     padding: 1rem;
+    justify-content: center;
 }
+
+
 
     .nav-links.active {
       display: flex;
@@ -106,11 +108,13 @@ font-size: 1.56em;
     width: 100%;
 }
 
+
 .hamburger {
-      display: block;
+      display: none; 
       flex-direction: column;
       cursor: pointer;
       gap: 0.31em;
+
     }
 
 .hamburger span {
@@ -170,7 +174,7 @@ section {
 }
 
 .hero-section {
-    padding: 5em;
+    padding: 180px 40px 50px 80px;
     background-color: var(--lightShade2);
 }
 
@@ -193,7 +197,7 @@ section {
     color: var(--darkShade1);
     padding: 0.31em;
     border-radius: 0.31em;
-    margin-bottom: 1.25em;
+    margin-bottom:1.25em;
 }
 
 .hero-text .label {
