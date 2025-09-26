@@ -62,15 +62,29 @@ font-size: 1.56em;
 .nav-links {
     display: flex;
     gap: 0.5em;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 1rem;
 }
+
+    .nav-links.active {
+      display: flex;
+    }
+
 
 .nav-links a {
     text-decoration: none;
     color: var(--baseShade1);
     position: relative;
     transition: color 0.3s ease;
-    display: inline-block;
+    display: inline-block;;
     padding: 0.2em;
+    text-align: center;
 }
 
 .nav-links a::after {
@@ -91,6 +105,23 @@ font-size: 1.56em;
 .nav-links a:hover::after {
     width: 100%;
 }
+
+.hamburger {
+      display: block;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 0.31em;
+    }
+
+.hamburger span {
+      display: block;
+      width: 25px;
+      height: 3px;
+      background-color: var(--baseShade1);
+      border-radius: 3px;
+    }
+
+
 
 /*Sear*/
 .search {
@@ -132,21 +163,6 @@ font-size: 1.56em;
 
 .search.active .btn {
     transform: translateX(198px);
-}
-
-.hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    gap: 0.31em;
-}
-
-.hamburger span {
-    display: block;
-    width: 1.56em;
-    height:0.18em;
-    background-color: var(--baseShade1);
-    border-radius: 3px;
 }
 
 section {
@@ -660,14 +676,14 @@ a {
 }
 
 #content p{
-    font-size: 17px;
+    font-size: 15px;
     line-height: 1.5;
     margin-bottom: 30px;
 }
 
 #content a {
     text-decoration: none;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 600;
     background:  #227f6c;;
     color: #fff;
@@ -688,6 +704,12 @@ a {
     top: 20px;
     cursor: pointer;
 }
+
+
+
+
+
+
 
 
 

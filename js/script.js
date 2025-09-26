@@ -199,8 +199,8 @@ panel.addEventListener('click', (e) => {
         selectedRating = e.target.nextElementSibling.innerHTML
     }
      })   
+ 
 
-     
      sendBtn.addEventListener('click', (e) => {
         panel.innerHTML = `
         <i class="fas fa-heart"></i>
@@ -228,23 +228,29 @@ panel.addEventListener('click', (e) => {
 
 
 
-//small script to toggle visibility
-  document.addEventListener('DOMContentLoaded', () => {
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
 
-    hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
+
+
+
+//hamburger
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const hamburger = document.getElementById('hamburger');
+      const navLinks = document.getElementById('nav-links');
+      const links = navLinks.querySelectorAll('a');
+
+      // Toggle menu
+      hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+      });
+
+      // Close menu when any link is clicked
+      links.forEach(link => {
+        link.addEventListener('click', () => {
+          navLinks.classList.remove('active');
+        });
+      });
     });
-  });
 
-
-
-
-
-
-
-
-
-
-
+    
+    

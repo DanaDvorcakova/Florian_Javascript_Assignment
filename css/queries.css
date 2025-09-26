@@ -85,10 +85,10 @@
 }
 
 @media (max-width: 768px) {
-    .nav-container {
+   .nav-container {
         padding: 0.5em 1.5em;
     }
-
+    
     .hero-text h1 {
         font-size: 2em;
     }
@@ -110,6 +110,7 @@
     .download-app-content a img {
         margin: 0.5em 0;
     }
+
 }
 
 @media (max-width: 576px) {
