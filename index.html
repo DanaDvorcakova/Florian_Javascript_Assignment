@@ -22,15 +22,29 @@
 
         <nav class="nav-links" id="nav-links">
             <a href="#home">Home</a>
+
+    <div class="dropdown">
+        <a class="dropbtn">About Us</a>
+        <div class="dropdown-content">
             <a href="#why-us">Why Us</a>
+            <a href="#how-it-works">How It Works</a>
+        </div>
+    </div>    
             <a href="shopping_cart.html">Shop</a>
             <a href="#favourites">Favourites</a>
-            <a href="#how-it-works">How It Works</a>
+            
             <a href="#testimonials">Testimonials</a>
             <a href="vote_screen.html">New Arrangement</a>
             <a href="#form">Registration</a>
-            <a href="#download-app">Download App</a> 
-            <a href="feedback.html">Feedback</a>
+
+       <a href="feedback.html">Feedback</a>
+         <div class="dropdown">
+            <a class="dropbtn">Contact Us</a>
+           <div class="dropdown-content">
+               <a href="#download-app">Download App</a> 
+               <a href="#contact">Contact Us</a>
+          </div>
+      </div>
 
 <div class="search">
     <div class="row">
@@ -327,9 +341,10 @@ class="close" onclick="hideBox()">
 
 <!-- Footer-->
 <footer> 
-<div class="footer-content">
+<div class="footer-content" id="contact">
         <h3>Florian</h3>
 </div>
+<span class="label">Contact</span>
 <p>Logo</p>
 <canvas id="myCanvas" width="300" height="300" style="border:1px solid #d3d3d3;"></canvas>
 <p><button onclick="myCanvas()">Reveal Our New Logo</button></p>

@@ -718,3 +718,53 @@ a {
 
 
 
+
+/* Base styles for navigation */
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Style all nav links and dropbtn the same */
+.nav-links a,
+.nav-links .dropbtn {
+    display: inline-block;
+    padding: 10px 16px;
+    text-decoration: none;
+     color: #227f6c;
+}
+
+/* Dropdown wrapper */
+.dropdown {
+    position: relative;
+}
+
+/* Dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Show dropdown on hover (desktop) */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Dropdown item styles */
+.dropdown-content a {
+    display: block;
+    padding: 10px 16px;
+    color: #227f6c;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
