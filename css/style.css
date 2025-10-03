@@ -755,3 +755,12 @@ a {
 
 
 
+/* Hide by default */
+.dropdown-content {
+  display: none;
+}
+
+/* Show when toggled */
+.dropdown-content.show {
+  display: block;
+}

@@ -30,6 +30,42 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+
+
+
+
+
+const dropdownButtons = document.querySelectorAll('.dropbtn');
+
+dropdownButtons.forEach(btn => {
+  btn.addEventListener('click', function (e) {
+    const dropdown = this.nextElementSibling; // .dropdown-content
+    dropdown.classList.toggle('show'); // Toggle visibility
+
+    // Optionally, close other open dropdowns
+    document.querySelectorAll('.dropdown-content').forEach(menu => {
+      if (menu !== dropdown) {
+        menu.classList.remove('show');
+      }
+    });
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //Reveal on Scroll
 const reveals = document.querySelectorAll(".reveal");
 function revealOnScroll() {
