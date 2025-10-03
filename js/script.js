@@ -30,11 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-
-
-
-
-
+//dropdown button
 const dropdownButtons = document.querySelectorAll('.dropbtn');
 
 dropdownButtons.forEach(btn => {
@@ -50,20 +46,6 @@ dropdownButtons.forEach(btn => {
     });
   });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 //Reveal on Scroll
@@ -95,7 +77,6 @@ function hideBox() {
     content.style.display = "none";
 
 }
-
 
 
 //Form
@@ -221,7 +202,6 @@ btn.addEventListener('click', () => {
     search.classList.toggle('active')
     input.focus()
 })
-
 
 
 
