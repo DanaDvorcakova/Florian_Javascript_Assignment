@@ -27,7 +27,7 @@
     }
 
       .nav-links.show {
-    display: flex; /* show when toggled */
+    display: flex;
   }
 
     .nav-links.active {
@@ -36,7 +36,6 @@
 
     .hamburger {
         display: flex;
-       /* padding-right: 90px;*/
     }
 
     .hero-content {
@@ -91,12 +90,10 @@
     display: inline-block;
 }
 
-/* Button styling (optional) */
 .dropbtn {
     cursor: pointer;
 }
 
-/* Dropdown content (hidden by default) */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -119,7 +116,6 @@
     display: block;
 }
 
-/* Optional: Change color on hover */
 .dropdown-content a:hover {
     background-color: #f1f1f1;
 }

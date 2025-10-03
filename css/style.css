@@ -72,12 +72,9 @@ font-size: 1.56em;
     justify-content: center;
 }
 
-
-
     .nav-links.active {
       display: flex;
     }
-
 
 .nav-links a {
     text-decoration: none;
@@ -127,7 +124,7 @@ font-size: 1.56em;
 
 
 
-/*Sear*/
+/*Search*/
 .search {
     position: relative;
     height: 50px;
@@ -709,17 +706,7 @@ a {
     cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
-
-/* Base styles for navigation */
+/* Styles for navigation */
 .nav-links {
     display: flex;
     flex-wrap: wrap;
@@ -728,7 +715,6 @@ a {
     gap: 10px;
 }
 
-/* Style all nav links and dropbtn the same */
 .nav-links a,
 .nav-links .dropbtn {
     display: inline-block;
@@ -737,12 +723,10 @@ a {
      color: #227f6c;
 }
 
-/* Dropdown wrapper */
 .dropdown {
     position: relative;
 }
 
-/* Dropdown content */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -768,3 +752,6 @@ a {
 .dropdown-content a:hover {
     background-color: #f1f1f1;
 }
+
+
+
