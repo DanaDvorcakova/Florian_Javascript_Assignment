@@ -1,11 +1,36 @@
+//hamburger
+document.addEventListener('DOMContentLoaded', function () {
+
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+
+  // Toggle mobile menu
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+
+  // Close menu on any internal link click
+  const allLinks = navLinks.querySelectorAll('a[href^="#"]');
+  allLinks.forEach(link => {
+    link.addEventListener('click', function (e) {
+      const targetId = this.getAttribute('href');
+
+      if (targetId && targetId.startsWith('#')) {
+        e.preventDefault();
+
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        navLinks.classList.remove('active'); 
+      }
+    });
+  });
+});
+
+
 //Reveal on Scroll
-const hamburger = document.getElementById("hamburger");
-const navLinks = document.getElementById("nav-links");
-
-hamburger.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-})
-
 const reveals = document.querySelectorAll(".reveal");
 function revealOnScroll() {
     for(let i = 0; i < reveals.length; i++) {
@@ -217,6 +242,7 @@ panel.addEventListener('click', (e) => {
             ratings[i].classList.remove('active')
         }
     }
+    
 
 //canvas image
     function myCanvas() {
@@ -232,35 +258,11 @@ panel.addEventListener('click', (e) => {
 
 
 
-//hamburger
 
-   document.addEventListener('DOMContentLoaded', () => {
-      const hamburger = document.getElementById('hamburger');
-      const navLinks = document.getElementById('nav-links');
-      const links = navLinks.querySelectorAll('a');
 
-      // Toggle menu
-      hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-      });
 
-      // Close menu when any link is clicked
-      links.forEach(link => {
-        link.addEventListener('click', () => {
-          navLinks.classList.remove('active');
-        });
-      });
-    });
 
-    
-    /*document.addEventListener("DOMContentLoaded", function () {
-    const hamburger = document.querySelector(".hamburger");
-    const navLinks = document.querySelector(".nav-links");
 
-    hamburger.addEventListener("click", () => {
-        navLinks.classList.toggle("show");
-    });
-});
-*/
+
 
 
